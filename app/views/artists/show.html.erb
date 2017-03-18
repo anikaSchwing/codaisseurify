@@ -9,10 +9,10 @@
     </div>
     <div class="col-md-8">
       <h1><%= @artist.name %></h1>
-      <%= @artist.description %>
+      <p><%= @artist.description %></p>
       <p>
-        <%= link_to "Add song", new_artist_song_path(@artist.id) %>
-        <%= link_to "Delete Artist", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to "Add song", new_artist_song_path(@artist.id), class:"btn btn-default" %>
+        <%= link_to "Delete Artist", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger" %>
       </p>
     </div>
   </div>
@@ -22,10 +22,10 @@
       <h4 class="list-group-item-heading">Songs by <%= @artist.name %></h4>
     </li>
     <% @songs.each do |song| %>
-      <li class="list-group-item">
+      <li class="list-group-item clearfix">
         <%= song.title %>
-        <%= link_to "Delete", artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: "Are you sure?" } %>
-      </li>
+        <%= link_to "Delete", artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-default pull-right" %>
+    </li>
     <% end %>
   </ul>
 </div>
