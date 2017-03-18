@@ -10,7 +10,7 @@ class SongsController < ApplicationController
     if @song.save
       redirect_to artist_path(@artist.id)
     else
-      redirect_to new_artist_song_path(:artist_id)
+      redirect_to new_artist_song_path(@artist.id)
     end
   end
 
