@@ -40,3 +40,15 @@ body{
   font-size: 2.75rem;
   color: #333333;
 }
+
+.wide-card{
+  margin: 5rem auto;
+  background-color: white;
+  padding:0;
+}
+
+.wide-card img{
+  margin-right: 1rem;
+  padding-bottom: 0;
+  width: 360px;
+}
