@@ -6,5 +6,5 @@
 </p>
 
 <% @songs.each do |song| %>
-  <p><%= song.title %> <button>Delete</button></p>
+  <p><%= song.title %> <%= link_to "Delete", song_path(song.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
 <% end %>
