@@ -1,1 +1,10 @@
 <h1> <%= @artist.name %> </h1>
+
+<p>
+  <%= link_to "Add song", new_song_path %>
+  <%= link_to "Delete Artist", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</p>
+
+<% @songs.each do |song| %>
+  <p><%= song.title %> <button>Delete</button></p>
+<% end %>
