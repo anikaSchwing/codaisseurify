@@ -1,4 +1,5 @@
 <h1> <%= @artist.name %> </h1>
+<%= image_tag @artist.image %>
 
 <p>
   <%= link_to "Add song", new_artist_song_path(@artist.id) %>

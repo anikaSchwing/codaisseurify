@@ -4,7 +4,7 @@
 # Artist 1
 adele = Artist.create(
           name: "Adele",
-          image: "",
+          image: "http://res.cloudinary.com/docyccptu/image/upload/v1489852781/Adele-2015-Alasdair-McLellan-billboard-650_c757em.jpg",
           description: "When the U.K. press began dubbing Adele 'the next Amy Winehouse' in late 2007, the hype didn't touch upon the singer/songwriter influence found in the Londoner's music. Influenced by Roberta Flack and Suzanne Vega as much as Jill Scott, Adele soon became a phenomenon in her own right; her second album, 21, eventually sold an estimated 30 million copies worldwide, making her one of the few sales successes in an age of digital streaming."
           )
 
@@ -15,7 +15,7 @@ song3_adele = Song.create(title: "Rumour has it", length: "443", artist: adele)
 #Artist 2
 fall_out_boy = Artist.create(
               name: "Fall Out Boy",
-              image: "",
+              image: "http://res.cloudinary.com/docyccptu/image/upload/v1489852977/fall-out-boy-press-2013-650b_zbq7u1.jpg",
               description: "Fall out boy desciption"
               )
 
