@@ -1,6 +1,23 @@
-<h1> All artists </h1>
 
-<% @artists.each do |artist| %>
-  <%= image_tag artist.image %>
-  <p><%= link_to artist.name, artist_path(artist.id) %></p>
-<% end %>
+
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Artists</h1>
+    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+  </div>
+</section>
+
+<div class="album text-muted">
+  <div class="container">
+
+    <div class="row">
+      <% @artists.each do |artist| %>
+        <div class="card">
+          <%= image_tag artist.image, class:"card-img"%>
+          <p class="card-text text-center"><%= link_to artist.name, artist_path(artist.id) %></p>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

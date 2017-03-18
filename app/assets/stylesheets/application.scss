@@ -2,3 +2,41 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+  background-color: #eeeeee;
+}
+
+.navbar{
+  margin-bottom: 0px;
+  // background-color: none;
+  // border-bottom: 0;
+}
+
+.jumbotron{
+  background-color:white;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  float: left;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border: 0;
+  background-color: white;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+  width: 360px;
+}
+
+.card-text, .card-text a {
+  padding: .25rem;
+  font-size: 2.75rem;
+  color: #333333;
+}
