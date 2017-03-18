@@ -1,10 +1,10 @@
 <h1> <%= @artist.name %> </h1>
 
 <p>
-  <%= link_to "Add song", new_song_path %>
+  <%= link_to "Add song", new_artist_song_path(@artist.id) %>
   <%= link_to "Delete Artist", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
 </p>
 
 <% @songs.each do |song| %>
-  <p><%= song.title %> <%= link_to "Delete", song_path(song.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
+  <p><%= song.title %> <%= link_to "Delete", artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
 <% end %>
