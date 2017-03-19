@@ -17,22 +17,18 @@ body{
   background-color:white;
 }
 
-.album {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .card {
   float: left;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
+  min-width: 300px;
+  margin: 2rem 1rem;
   border: 0;
   background-color: white;
+  overflow: hidden;
 }
 
 .card > img {
   margin-bottom: .75rem;
-  width: 360px;
+  height: 230px;
 }
 
 .card-text, .card-text a {
