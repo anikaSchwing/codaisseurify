@@ -3,7 +3,13 @@ class ArtistsController < ApplicationController
   before_action :set_songs, except: [:index]
 
   def index
-    @artists = Artist.all
+    if params[:order]
+      @artists = Artist.all.order(params[:order])
+    # elsif (params[:order] == 'name, desc')
+    #   @artists = Artist.all.order(name: :desc)
+    else
+      @artists = Artist.all
+    end
   end
 
   def show; end

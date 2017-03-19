@@ -5,6 +5,16 @@
   </div>
 </section>
 
+<div class="container text-center">
+    Sort by name:
+    <%= link_to('[A-Z]', :order => 'name ASC') %>
+    <%= link_to('[Z-A]', :order => 'name DESC') %>
+  <br />
+    Sort by creation date:
+    <%= link_to('[New-Old]', :order => 'created_at ASC') %>
+    <%= link_to('[Old-New]', :order => 'created_at DESC') %>
+</div>
+
 <div class="container">
   <% @artists.each do |artist| %>
     <div class="card">
