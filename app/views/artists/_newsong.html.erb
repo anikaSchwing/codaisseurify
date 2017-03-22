@@ -1,0 +1,10 @@
+<%= form_for [@artist, @song] do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create" %>
+  </div>
+<% end %>
