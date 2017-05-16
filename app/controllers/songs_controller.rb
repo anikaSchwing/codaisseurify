@@ -10,7 +10,7 @@ class SongsController < ApplicationController
     if @song.save
       redirect_to_artist
     else
-      redirect_to new_artist_song_path(@artist.id)
+      redirect_to new_artist_song_path(@artist.id) #render instead of redirect?
     end
   end
 

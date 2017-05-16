@@ -23,6 +23,7 @@
         <%= link_to "Delete", artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-default pull-right" %>
     </li>
     <% end %>
+    <li class="list-group-item clearfix text-center"> <%= render 'newsong' %> </li>
   </ul>
-  <%= render 'newsong' %>
+
 </div>
